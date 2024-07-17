@@ -1,5 +1,5 @@
 {
-  "name": "@mints/component-template",
+  "name": "@mints/radio",
   "packageManager": "yarn@3.6.1",
   "version": "1.0.0",
   "type": "module",
@@ -8,17 +8,17 @@
     "types"
   ],
   "types": "types",
-  "main": "./dist/my-component.umd.cjs",
-  "module": "./dist/my-component.js",
+  "main": "./dist/radio.umd.cjs",
+  "module": "./dist/radio.js",
   "exports": {
     ".": {
       "import": {
         "types": "./types/index.d.ts",
-        "default": "./dist/my-component.js"
+        "default": "./dist/radio.js"
       },
       "require": {
         "types": "./types/index.d.ts",
-        "default": "./dist/my-component.umd.cjs"
+        "default": "./dist/radio.umd.cjs"
       }
     }
   },

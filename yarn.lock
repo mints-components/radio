@@ -3514,9 +3514,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mints/component-template@workspace:.":
+"@mints/config-provider@npm:^1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@mints/config-provider@npm:1.0.0-beta.5"
+  dependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 1b8c047a899ed199f2f71aee560d34fa043f8a4aa050ff21c5b924800694197d342b9fc770af29035374f0938cd8f2e9633b04b2ae5808cebca74a5331cf0478
+  languageName: node
+  linkType: hard
+
+"@mints/eslint-config@npm:^1.0.0-beta.1":
+  version: 1.0.0-beta.1
+  resolution: "@mints/eslint-config@npm:1.0.0-beta.1"
+  dependencies:
+    eslint-config-prettier: ^8.9.0
+    eslint-config-react-app: ^7.0.1
+    eslint-plugin-prettier: ^5.0.0
+    prettier: ^3.0.0
+  checksum: d34e0be19505ad10bb69cb717059726f19dab76e245a7cca699d9cd451f203c96a4e3e6028637c15718557543b74ea9f8b41a877b2cc5d929748cc602b1bc055
+  languageName: node
+  linkType: hard
+
+"@mints/radio@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@mints/component-template@workspace:."
+  resolution: "@mints/radio@workspace:."
   dependencies:
     "@chromatic-com/storybook": ^1
     "@mints/config-provider": ^1.0.0-beta.5
@@ -3552,30 +3576,6 @@ __metadata:
     react: ^18.2.0
   languageName: unknown
   linkType: soft
-
-"@mints/config-provider@npm:^1.0.0-beta.5":
-  version: 1.0.0-beta.5
-  resolution: "@mints/config-provider@npm:1.0.0-beta.5"
-  dependencies:
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  peerDependencies:
-    react: ^18.2.0
-  checksum: 1b8c047a899ed199f2f71aee560d34fa043f8a4aa050ff21c5b924800694197d342b9fc770af29035374f0938cd8f2e9633b04b2ae5808cebca74a5331cf0478
-  languageName: node
-  linkType: hard
-
-"@mints/eslint-config@npm:^1.0.0-beta.1":
-  version: 1.0.0-beta.1
-  resolution: "@mints/eslint-config@npm:1.0.0-beta.1"
-  dependencies:
-    eslint-config-prettier: ^8.9.0
-    eslint-config-react-app: ^7.0.1
-    eslint-plugin-prettier: ^5.0.0
-    prettier: ^3.0.0
-  checksum: d34e0be19505ad10bb69cb717059726f19dab76e245a7cca699d9cd451f203c96a4e3e6028637c15718557543b74ea9f8b41a877b2cc5d929748cc602b1bc055
-  languageName: node
-  linkType: hard
 
 "@ndelangen/get-tarball@npm:^3.0.7":
   version: 3.0.9
