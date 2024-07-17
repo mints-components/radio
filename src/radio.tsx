@@ -18,7 +18,12 @@ export const Radio = ({ disabled = false, children, ...props }: Props) => {
     setChecked(props.checked ?? false);
   }, [props.checked]);
 
-  const handleClick = () => setChecked(true);
+  const handleClick = () => {
+    if (disabled) {
+      return;
+    }
+    setChecked(true);
+  };
 
   return (
     <S.Wrapper onClick={handleClick}>
