@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import classNames from 'classnames';
 import { useTheme } from '@mints/config-provider';
 
 import * as S from './styles';
@@ -19,21 +18,16 @@ export const Radio = ({ disabled = false, children, ...props }: Props) => {
     setChecked(props.checked ?? false);
   }, [props.checked]);
 
-  const radiosCls = classNames('radio', {
-    'radio-checked': checked,
-    'radio-disabled': disabled,
-  });
-
   const handleClick = () => setChecked(true);
 
   return (
-    <S.Wrapper
-      $themeColor={colorPrimary}
-      $disabled={disabled}
-      onClick={handleClick}
-    >
-      <span className={radiosCls} />
-      {children && <span className="text">{children}</span>}
+    <S.Wrapper onClick={handleClick}>
+      <S.Radio
+        $checked={checked}
+        $disabled={disabled}
+        $themeColor={colorPrimary}
+      />
+      {children && <S.Text $disabled={disabled}>{children}</S.Text>}
     </S.Wrapper>
   );
 };

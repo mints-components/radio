@@ -3559,7 +3559,6 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.0.0
     "@typescript-eslint/parser": ^6.0.0
     "@vitejs/plugin-react": ^4.0.3
-    classnames: ^2.5.1
     eslint: ^8.45.0
     eslint-plugin-storybook: ^0.8.0
     husky: ^8.0.0
@@ -6435,13 +6434,6 @@ __metadata:
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
   checksum: 121cf788b12b9b92016e19b59a81ab5fe0fed821c087f213a9a5606e322f5f13770398c861fda387f19629749e2ead9c20d57231f1373848375460268897f7f8
-  languageName: node
-  linkType: hard
-
-"classnames@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "classnames@npm:2.5.1"
-  checksum: da424a8a6f3a96a2e87d01a432ba19315503294ac7e025f9fece656db6b6a0f7b5003bb1fbb51cbb0d9624d964f1b9bb35a51c73af9b2434c7b292c42231c1e5
   languageName: node
   linkType: hard
 
