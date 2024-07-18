@@ -61,5 +61,10 @@ export const Radio = styled.span<{
 export const Text = styled.span<{ $disabled: boolean }>`
   margin-left: 4px;
   font-size: 14px;
-  ${({ $disabled }) => $disabled && 'color: #bfbfbf;'}
+  ${({ $disabled }) =>
+    $disabled &&
+    `
+    color: #bfbfbf;
+    cursor: not-allowed;
+  `}
 `;
