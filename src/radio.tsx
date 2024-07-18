@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTheme } from '@mints/config-provider';
 
 import * as S from './styles';
@@ -9,22 +8,17 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const Radio = ({ disabled = false, children, ...props }: Props) => {
-  const [checked, setChecked] = useState(false);
-
+export const Radio = ({
+  checked = false,
+  disabled = false,
+  children,
+}: Props) => {
   const { colorPrimary } = useTheme();
 
-  const handleClick = () => {
-    if (disabled) {
-      return;
-    }
-    setChecked(true);
-  };
-
   return (
-    <S.Wrapper onClick={handleClick}>
+    <S.Wrapper>
       <S.Radio
-        $checked={props.checked ?? checked}
+        $checked={checked}
         $disabled={disabled}
         $themeColor={colorPrimary}
       />
