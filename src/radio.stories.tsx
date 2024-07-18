@@ -19,4 +19,11 @@ export const Radio: Story = {
     disabled: false,
     children: 'This is a radio',
   },
+  argTypes: {
+    value: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 };

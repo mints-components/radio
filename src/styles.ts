@@ -68,3 +68,15 @@ export const Text = styled.span<{ $disabled: boolean }>`
     cursor: not-allowed;
   `}
 `;
+
+export const GroupWrapper = styled.div`
+  display: flex;
+
+  & > label {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+`;
