@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTheme } from '@mints/config-provider';
 
 import * as S from './styles';
@@ -14,10 +14,6 @@ export const Radio = ({ disabled = false, children, ...props }: Props) => {
 
   const { colorPrimary } = useTheme();
 
-  useEffect(() => {
-    setChecked(props.checked ?? false);
-  }, [props.checked]);
-
   const handleClick = () => {
     if (disabled) {
       return;
@@ -28,7 +24,7 @@ export const Radio = ({ disabled = false, children, ...props }: Props) => {
   return (
     <S.Wrapper onClick={handleClick}>
       <S.Radio
-        $checked={checked}
+        $checked={props.checked ?? checked}
         $disabled={disabled}
         $themeColor={colorPrimary}
       />
